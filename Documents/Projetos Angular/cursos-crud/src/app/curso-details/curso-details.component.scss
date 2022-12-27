@@ -1,0 +1,25 @@
+.full-width{
+    width: 100%;
+}
+mat-card{
+    max-width: 80%;
+    margin: 4em auto;
+    text-align: center;
+}
+.min-width{
+    width: 100%;
+    min-height: 150px;
+}
+.custom-snack-error{
+    color: red !important;
+    background-color: red !important;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .loading-spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}

@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+    <span>Spring & Angular</span>
+    <span class="example-spacer"></span>
+    
+    <button (click)="goHomePage()" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>home</mat-icon>
+      </button>
+
+    <button mat-stroked-button color="accent" (click)="goCadastroPage()">Cadastrar</button>
+    <button mat-stroked-button color="accent" (click)="goCursosPage()">Cursos</button>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+

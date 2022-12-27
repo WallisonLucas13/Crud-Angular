@@ -1,0 +1,41 @@
+<mat-card>
+
+    <mat-card-content>
+
+        <mat-toolbar color="primary">
+            <span>Atualizar Curso!</span>
+            <span class="example-spacer"></span>
+            <button mat-stroked-button color="accent" (click)="goCursosPage()">Cursos</button>
+        </mat-toolbar>
+        <br>
+
+        <form [formGroup]="form">
+
+            <mat-form-field appearance="fill"  class="full-width">
+                <mat-label>Nome</mat-label>
+                <input type="text" matInput placeholder="Nome" formControlName="nome" required>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="full-width">
+                <mat-label>Categoria</mat-label>
+    
+                <mat-select formControlName="categoria" required>
+    
+                  <mat-option value="Front-End">Front-End</mat-option>
+                  <mat-option value="Back-End">Back-End</mat-option>
+                  <mat-option value="Front && Back">Front & Back</mat-option>
+                  <mat-option value="Hacking">Hacking</mat-option>
+                  <mat-option value="Framework">Framework</mat-option>
+                  <mat-option value="Database">DB</mat-option>
+    
+                </mat-select>
+              </mat-form-field>
+
+            <button mat-stroked-button color="accent" (click)="submit()">Enviar</button>
+
+        </form>
+
+    </mat-card-content>
+
+</mat-card>
+
